@@ -1,0 +1,21 @@
+[DEFAULT]
+verbose=true
+##### RabbitMQ ##### 
+rabbit_host=127.0.0.1
+
+##### MySQL ##### 
+# Nova data backend.
+sql_connection=mysql://root@127.0.0.1/nova
+# Billing data backend.
+billing_sql_connection=mysql://root@127.0.0.1/billing
+
+#### Keystone authentication ####
+admin_user=admin
+admin_password=secrete
+auth_url=http://127.0.0.1:5000/v2.0
+admin_url=http://127.0.0.1:35357/v2.0
+
+#### Price List ####
+supported_items = ['cpu', 'memory']
+cpu_price = 1
+mem_price = 1
